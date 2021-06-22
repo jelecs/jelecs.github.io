@@ -1,0 +1,51 @@
+<nav>
+  <ul class="nav-ul-parent">
+    <li class="nav-title"><a>jEL</a></li>
+    <li><a href="/jEL/">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="/jEL/quickstart.html">Quickstart</a></li>
+    <li>
+      <a href="#" id="nav-docs">Docs</a>
+      <div class="nav-ul-toggle"></div>
+      <ul class="hidden">
+        <li>
+          <a href="/jEL/code_style.html" id="nav-code-style">Code Style</a>
+          <div class="nav-ul-toggle"></div>
+          <ul class="hidden">
+            <li>
+              <a href="/jEL/code_style.html#naming">Naming</a>
+              <div class="nav-ul-toggle"></div>
+              <ul class="hidden">
+                <li><a href="/jEL/code_style.html#variables">Variables</a></li>
+                <li><a href="/jEL/code_style.html#pointers">Pointers</a></li>
+                <li><a href="/jEL/code_style.html#structs">Structs</a></li>
+                <li><a href="/jEL/code_style.html#functions">Functions</a></li>
+                <li><a href="/jEL/code_style.html#macros">Macros</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/jEL/hla.html">HLA</a></li>
+        <li>
+          <a href="#">Entities</a>
+          <div class="nav-ul-toggle"></div>
+          <ul class="hidden">
+            <li><a href="#">Entity Manager</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <script type="text/javascript">
+    $('.nav-ul-toggle').on('click', function(){
+      if ($(this).hasClass('open')) {
+        $(this).removeClass('open');
+        $(this).next().addClass('hidden');
+      }
+      else {
+        $(this).addClass('open');
+        $(this).next().removeClass('hidden');
+      }
+    });
+  </script>
+</nav>

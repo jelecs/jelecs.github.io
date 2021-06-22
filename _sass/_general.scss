@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  color: #7a7a7a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #33a5ff;
+}
+
+code {
+  background-color: #ccc8;
+  padding: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+img {
+  display: block;
+}
+
+main {
+  width: 100%;
+  max-width: calc(100vw - 256px);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+// #33a5ff
